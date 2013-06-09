@@ -18,7 +18,7 @@ public class NPC : MonoBehaviour
 	{
 		if(NPCManager.Instance())
 		{
-			NPCManager.Instance().AddCharacter(this.npc, this.gameObject);
+			NPCManager.Instance().RegisterNPC(this.gameObject);
 		}
 	}
 	
@@ -26,7 +26,12 @@ public class NPC : MonoBehaviour
 	{
 		if(NPCManager.Instance())
 		{
-			NPCManager.Instance().RemoveCharacter(this.npc);
+			NPCManager.Instance().UnRegisterNPC(this.gameObject);
 		}
+	}
+	
+	void Update()
+	{
+		
 	}
 }

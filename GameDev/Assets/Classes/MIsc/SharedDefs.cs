@@ -41,4 +41,11 @@ public static class SharedDefs
 		Grunt,
 		Koopa
 	};
+	
+	public enum Items
+	{
+		Vial,
+		Charger,
+		Coin,
+	};
 }

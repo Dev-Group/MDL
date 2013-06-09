@@ -4,22 +4,14 @@ using System.Collections.Generic;
 
 public class NPCManager : MonoBehaviour
 {
-	private Dictionary<SharedDefs.NPCs, GameObject> npcs = new Dictionary<SharedDefs.NPCs, GameObject>();
-
-	public void AddCharacter(SharedDefs.NPCs name, GameObject obj)
+	private List<GameObject> npcs = new List<GameObject>();
+	
+	public void RegisterNPC(GameObject npc)
 	{
-		if(this.npcs.ContainsKey(name))
-			return;
-		
-		this.npcs.Add(name, obj);
 	}
 	
-	public void RemoveCharacter(SharedDefs.NPCs name)
+	public void UnRegisterNPC(GameObject npc)
 	{
-		if(!this.npcs.ContainsKey(name))
-			return;
-		
-		this.npcs.Remove(name);
 	}
 	
 	public static NPCManager Instance()

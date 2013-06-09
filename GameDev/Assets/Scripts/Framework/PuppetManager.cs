@@ -14,7 +14,8 @@ public class PuppetManager : MonoBehaviour
 	{
 		if(this.characters.ContainsKey(name))
 			return;
-		
+	
+		Debug.Log("Adding new Puppet!");
 		this.characters.Add(name, obj);
 	}
 	
