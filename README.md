@@ -1,4 +1,0 @@
-MDL
-===
-
-Mecha-Demon-Laser
